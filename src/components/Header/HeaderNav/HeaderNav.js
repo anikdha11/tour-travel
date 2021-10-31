@@ -19,7 +19,7 @@ const HeaderNav = () => {
                            {users?.email? <button className="text-danger border me-2 fw-bold" onClick={logOut}>Logout</button>:
                            <Nav.Link id="top-link"  as={Link} to="/login">Login</Nav.Link>}
                         <Navbar.Text className="fw-bold text-info">
-                            Log in as: <a href="#login">{users?.displayName}</a>
+                            Log in as: <a className="ms-2" href="#login">{users?.displayName} <img className="w-25 border rounded-circle ms-2" src={users.photoURL} alt="" /></a>
                         </Navbar.Text>
                     </Navbar.Collapse>
 
