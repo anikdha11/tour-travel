@@ -11,7 +11,7 @@ const Packages = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div className="mt-2">
+        <div id="packages" className="mt-2">
             <div id="top-link" className="mb-3">
                 <h1 className="text-danger ">Top <span className="text-info">Tour Packages</span></h1>
             </div>

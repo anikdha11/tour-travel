@@ -22,13 +22,14 @@
     transform-origin: bottom left;
   }
   #btn-bg{
-    background-color: rgb(245, 244, 244);
+ 
     border:2px rgb(34, 33, 26) solid;
-    border-radius: 10px;
-    font-weight: 500;
+    border-radius: 6px;
+    font-weight: 200;
+    font-size: 1.5rem;
   }
   #btn-bg:hover{
-   color: white;
-   background-color: rgb(44, 43, 43);
-   border:2px rgb(255, 255, 252) solid
+   color: rgb(235, 21, 146);
+   border:2px rgb(243, 4, 4) solid;
+   font-weight: 500;
   }

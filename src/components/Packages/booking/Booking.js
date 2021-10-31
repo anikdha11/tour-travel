@@ -7,7 +7,7 @@ const Booking = () => {
     const [single, setSingle] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${bookingId}`)
+        fetch(`https://sheltered-chamber-16108.herokuapp.com/packages/${bookingId}`)
             .then(res => res.json())
             .then(data => setSingle(data))
     }, [])
