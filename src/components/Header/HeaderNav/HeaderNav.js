@@ -9,7 +9,7 @@ const HeaderNav = () => {
         <div>
             <Navbar bg="light" variant="light" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand id="top-link"className="text-warning fw-bolder"  href="#home"><i class="fas fa-tram text-info"></i> Traveling Tour</Navbar.Brand>
+                    <Navbar.Brand id="top-link"className="fw-bolder"  href="#home"><i className="fas fa-tram text-info"></i> Traveling Tour</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                   

@@ -21,3 +21,14 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  #btn-bg{
+    background-color: rgb(245, 244, 244);
+    border:2px rgb(34, 33, 26) solid;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  #btn-bg:hover{
+   color: white;
+   background-color: rgb(44, 43, 43);
+   border:2px rgb(255, 255, 252) solid
+  }

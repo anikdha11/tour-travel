@@ -17,7 +17,7 @@ const Packages = () => {
             </div>
             <div className="">
                 {
-                    services.map(service => <Package service={service}></Package>)
+                    services.map(service => <Package key={service._id} service={service}></Package>)
                 }
             </div>
         </div>

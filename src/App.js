@@ -6,6 +6,9 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import LogIn from './components/login/login/LogIn';
+import PrivateRoute from './components/login/privateRoute/PrivateRoute';
+import NotFound from './components/NotFound/NotFound';
+import Booking from './components/Packages/booking/Booking';
 import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -26,6 +29,12 @@ function App() {
       </Route>
       <Route exact path="/login">
       <LogIn></LogIn>
+      </Route>
+      <PrivateRoute exact path="/packages/:bookingId">
+        <Booking></Booking>
+      </PrivateRoute>
+      <Route exact path="*">
+      <NotFound></NotFound>
       </Route>
     </Switch>
     <Footer></Footer>
