@@ -1,0 +1,26 @@
+#top-link{
+    display: inline-block;
+    position: relative;
+    color: #2d7474;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#top-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #4f1380;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+#top-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#top-link:hover{
+    color: rgba(144, 25, 173, 0.938);
+}
