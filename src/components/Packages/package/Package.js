@@ -15,7 +15,7 @@ const Package = ({ service }) => {
                             <Card.Text>
                                 With supporting text below as a natural lead-in to additional content.
                             </Card.Text>
-                          <Link to={`/packages/${_id}`} >  <Button id="btn-bg" variant="primary">Booking</Button></Link>
+                          <Link to={`/packages/${_id}`} >  <Button id="btn-bg" variant="primary">Book Now</Button></Link>
                         </Card.Body>
 
                     </Card>
