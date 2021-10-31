@@ -18,8 +18,8 @@ const HeaderNav = () => {
                             <Nav.Link id="top-link" as={Link} to="/contactus">Contact Us</Nav.Link>
                            {users?.email? <button className="text-danger border me-2 fw-bold" onClick={logOut}>Logout</button>:
                            <Nav.Link id="top-link"  as={Link} to="/login">Login</Nav.Link>}
-                        <Navbar.Text className="fw-bold text-info">
-                            Log in as: <a className="ms-2" href="#login"><span>{users?.displayName}</span><img className=" ms-2 rounded-circle" src={users.photoURL} alt="" /></a>
+                        <Navbar.Text className="fw-bold">
+                            Log in as: <a className="ms-2" href="#login"><span>{users?.displayName}</span><img className="ms-2 rounded-circle" src={users.photoURL} alt="" /></a>
                         </Navbar.Text>
                     </Navbar.Collapse>
 
