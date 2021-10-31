@@ -24,3 +24,6 @@
 #top-link:hover{
     color: rgba(144, 25, 173, 0.938);
 }
+a img{
+    width: 60px;
+}
