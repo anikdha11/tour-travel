@@ -11,7 +11,7 @@ const Booking = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/booked', data)
+        axios.post('https://sheltered-chamber-16108.herokuapp.com/booked', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Booked successfully');

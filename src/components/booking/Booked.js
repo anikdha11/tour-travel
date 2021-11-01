@@ -4,12 +4,12 @@ import { Button, Card, Container } from 'react-bootstrap';
 const Booked = () => {
     const [booked, setBooked] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/booked')
+        fetch('https://sheltered-chamber-16108.herokuapp.com/booked')
             .then(res => res.json())
             .then(data => setBooked(data))
     }, [])
     const handleDelete = id =>{
-        const url = `http://localhost:5000/booked/${id}`;
+        const url = `https://sheltered-chamber-16108.herokuapp.com/booked/${id}`;
         fetch(url,{
             method: 'DELETE'
         })
@@ -17,9 +17,15 @@ const Booked = () => {
         .then(data =>{
             console.log(data);
             if(data.deletedCount){
-                alert('Successfully Deleted')
+            if(window.confirm("Are you Sure!")){
                 const remaining = booked.filter(booking =>booking._id !== id);
                 setBooked(remaining);
+            }
+            else{
+                const text = "Cancel";
+                return text
+            }
+                 
             }
          
         })
