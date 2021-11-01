@@ -6,7 +6,7 @@ import TourReviwe from '../tourReviwe/TourReviwe';
 import "./Home.css"
 
 const Home = () => {
-    
+
     return (
         <div>
             <TopBanner></TopBanner>

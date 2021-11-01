@@ -8,26 +8,26 @@ const Booked = () => {
             .then(res => res.json())
             .then(data => setBooked(data))
     }, [])
-    const handleDelete = id =>{
+    const handleDelete = id => {
         const url = `https://sheltered-chamber-16108.herokuapp.com/booked/${id}`;
-        fetch(url,{
+        fetch(url, {
             method: 'DELETE'
         })
-        .then(res =>res.json())
-        .then(data =>{
-            console.log(data);
-            if(data.deletedCount){
-            if(window.confirm("Are you Sure!")){
-                const remaining = booked.filter(booking =>booking._id !== id);
-                setBooked(remaining);
-            }
-            else{
-                return true;
-            }
-                 
-            }
-         
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.deletedCount) {
+                    if (window.confirm("Are you Sure!")) {
+                        const remaining = booked.filter(booking => booking._id !== id);
+                        setBooked(remaining);
+                    }
+                    else {
+                        return true;
+                    }
+
+                }
+
+            })
     }
     return (
         <div>
@@ -40,7 +40,7 @@ const Booked = () => {
                             <Card.Body>
                                 <Card.Title><small>{booking.email}</small></Card.Title>
                                 <Card.Text>
-                                    <Button onClick={()=>handleDelete(booking._id)} id="btn-bg" variant="primary">Delete Booked</Button>
+                                    <Button onClick={() => handleDelete(booking._id)} id="btn-bg" variant="primary">Delete Booked</Button>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

@@ -3,7 +3,7 @@ import { Button, Card, Form } from 'react-bootstrap';
 import "./TopBanner.css"
 
 const TopBanner = () => {
-  
+
     return (
         <div>
             <Card>
@@ -11,8 +11,8 @@ const TopBanner = () => {
                 <Card.ImgOverlay>
                     <Card.Title className="top-title"><h1>Welcome To</h1><h1>Our Travel&Tour Website</h1></Card.Title>
                     <Card.Text>
-                    <Form.Control className="w-75 mx-auto" size="lg" type="text" placeholder="Search over a million tour and travels..." />
-                    <Button className="mt-2" variant="outline-light">Search</Button>
+                        <Form.Control className="w-75 mx-auto" size="lg" type="text" placeholder="Search over a million tour and travels..." />
+                        <Button className="mt-2" variant="outline-light">Search</Button>
                     </Card.Text>
                 </Card.ImgOverlay>
             </Card>

@@ -39,8 +39,8 @@ const Booking = () => {
             <div>
                 <h3 className="border rounded w-50 mx-auto p-3 mb-5">Please Confirmed Your Booking</h3>
                 <form className="d-flex flex-column mb-2" onSubmit={handleSubmit(onSubmit)}>
-                    <input className="w-50 mx-auto mb-4 "{...register("PackageName", {maxLength: 30})} placeholder="Package name"  />
-                    <input className="w-50 mx-auto" value={users?.displayName} {...register("name", {maxLength: 20 })} placeholder="name" />
+                    <input className="w-50 mx-auto mb-4 "{...register("PackageName", { maxLength: 30 })} placeholder="Package name" />
+                    <input className="w-50 mx-auto" value={users?.displayName} {...register("name", { maxLength: 20 })} placeholder="name" />
                     <input className="w-50 mx-auto mt-3 mb-3" value={users.email} {...register("email")} placeholder="email" />
                     <input className="w-50 mx-auto mb-4 " {...register("address")} placeholder="address" />
                     <input className="w-50 mx-auto mb-4 " type="number"{...register("Phone number", { min: 50 })} placeholder="Phone number" />
