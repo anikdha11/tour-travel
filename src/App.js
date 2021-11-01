@@ -1,6 +1,7 @@
 
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
+import Booked from './components/booking/Booked';
 import ContactUs from './components/contactus/ContactUs';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -32,6 +33,9 @@ function App() {
       </Route>
       <PrivateRoute exact path="/packages/:bookingId">
         <Booking></Booking>
+      </PrivateRoute>
+      <PrivateRoute exact path="/booked">
+        <Booked></Booked>
       </PrivateRoute>
       <Route exact path="*">
       <NotFound></NotFound>
