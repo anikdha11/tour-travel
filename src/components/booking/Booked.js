@@ -22,8 +22,7 @@ const Booked = () => {
                 setBooked(remaining);
             }
             else{
-                const text = "Cancel";
-                return text
+                return true;
             }
                  
             }
