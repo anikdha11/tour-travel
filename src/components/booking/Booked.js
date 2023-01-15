@@ -4,14 +4,12 @@ import { Button, Card, Container } from "react-bootstrap";
 const Booked = () => {
   const [booked, setBooked] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://tour-travel-server-code-rkbt3yfcc-anikdha11.vercel.app/booked"
-    )
+    fetch("https://assingment-11-node-mongo.vercel.app/booked")
       .then((res) => res.json())
       .then((data) => setBooked(data));
   }, []);
   const handleDelete = (id) => {
-    const url = `https://tour-travel-server-code-rkbt3yfcc-anikdha11.vercel.app/booked/${id}`;
+    const url = `https://assingment-11-node-mongo.vercel.app/booked/${id}`;
     fetch(url, {
       method: "DELETE",
     })

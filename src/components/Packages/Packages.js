@@ -4,9 +4,7 @@ import Package from "./package/Package";
 const Packages = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://tour-travel-server-code-rkbt3yfcc-anikdha11.vercel.app/packages"
-    )
+    fetch("https://assingment-11-node-mongo.vercel.app/packages")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

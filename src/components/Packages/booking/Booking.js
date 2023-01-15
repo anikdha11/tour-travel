@@ -12,10 +12,7 @@ const Booking = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post(
-        "https://tour-travel-server-code-rkbt3yfcc-anikdha11.vercel.app/booked",
-        data
-      )
+      .post("https://assingment-11-node-mongo.vercel.app/booked", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Submit successfully");
@@ -27,9 +24,7 @@ const Booking = () => {
   const [single, setSingle] = useState({});
 
   useEffect(() => {
-    fetch(
-      `https://tour-travel-server-code-rkbt3yfcc-anikdha11.vercel.app/packages/${bookingId}`
-    )
+    fetch(`https://assingment-11-node-mongo.vercel.app/packages/${bookingId}`)
       .then((res) => res.json())
       .then((data) => setSingle(data));
   }, []);
